@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	*/
 	title: "yeee3642",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "https://xn--i2raa.org/", // 喵喵喵.org (IDN → punycode)
+	url: "https://yeee3642.github.io/", // 喵喵喵.org (xn--i2raa.org) detached while its WHOIS verification is pending
 };
 
 // Used to generate links in both the Header & Footer.
