@@ -82,3 +82,19 @@
 	--tw-prose-quotes: var(--color-quote);
 	--tw-prose-th-borders: #666;
 }
+
+/* Keep wide tables inside the article column instead of letting them run over
+   the table of contents: shrink to the column, scroll only if a cell really
+   cannot wrap. */
+.prose table {
+	display: block;
+	width: max-content;
+	min-width: 0;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+/* long unbreakable inline code (flags, hashes, URLs) wraps inside cells */
+.prose :is(td, th) code {
+	overflow-wrap: anywhere;
+}
